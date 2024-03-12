@@ -1,0 +1,32 @@
+header {
+  
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    // Logo container
+    .logo-container {
+        img{
+            height: 50px;
+        }
+    }
+
+    // Nav 
+    nav {
+        a {
+            color: black;
+            text-decoration: none;
+            padding:10px;
+            font-weight: 600;
+
+            &.active {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

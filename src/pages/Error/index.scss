@@ -1,0 +1,23 @@
+section.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 70px;
+    margin-bottom: 50px;
+
+    .error-number {
+        font-size: 16em;
+    }
+    .error-message {
+        font-size: 2.25em;
+        font-weight: 500;
+    }
+
+    a {
+        color: black;
+        font-weight: 600;
+        text-decoration: underline 2px;
+    }
+}

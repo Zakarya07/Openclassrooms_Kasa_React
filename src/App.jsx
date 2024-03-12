@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/housing/:id", // Utilisation d'un paramètre dans l'URL
+    path: "/housing/:id", 
     element: <HousingDetails />,
   },
   {
