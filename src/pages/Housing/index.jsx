@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-function Housing() {
+const Housing = () => {
   let { id } = useParams();
 
   return (
@@ -8,7 +8,6 @@ function Housing() {
       <h1>Logement {id} </h1>
     </div>
   );
-}
+};
 
 export default Housing;
-
