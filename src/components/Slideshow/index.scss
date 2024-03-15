@@ -1,0 +1,64 @@
+.caroussel-container {
+  height: 420px;
+  position: relative;
+  margin: 30px auto;
+  border-radius: 14px;
+  box-shadow:2px 2px 4px rgba(0, 0, 0, 0.33);
+  overflow: hidden;
+
+  //   Image container
+  .image-container {
+    height: 100%;
+    width: 100%;
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  //   Indicator container
+  .indicator-container {
+    position: absolute;
+    inset: 0;
+
+    // Navigation (arrow)  container
+    .navigation-button-container {
+      height: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 0.2s linear;
+
+        svg {
+          height: 200px;
+          width:200px;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    // Picture number container
+    .picture-number-container {
+      height: 10%;
+      color: white;
+      display: flex;
+      justify-content: center;
+
+      p {
+        font-weight: 500;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
