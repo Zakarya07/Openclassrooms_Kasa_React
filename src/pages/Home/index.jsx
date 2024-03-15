@@ -19,7 +19,7 @@ const Home = () => {
         <section className="housings-cards-container wrapper">
           {housings_data.map((housing) => (
             <Link key={housing.id} to={`/housing/${housing.id}`}>
-              <HousingCard location_title={housing.title}/>
+              <HousingCard housing_thumbnail={housing.cover} location_title={housing.title}/>
             </Link>
           ))}
         </section>

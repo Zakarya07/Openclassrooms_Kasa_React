@@ -1,0 +1,103 @@
+.global-informations-container {
+  
+  .top-part-location {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+    // Left part (title and tags)
+      .left-location-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        // Location title
+        h1.location-title{
+          font-size: 2.25em;
+          font-weight: 500;
+        }
+        // Location city
+        p.location-city{
+          font-weight: 500;
+        }
+
+        // Tags container
+        .location-tags {
+          display: flex;
+          gap: 5px;
+
+          span.bg-primary {
+              color: white;
+              padding: 5px 15px;
+              min-width:100px;
+              text-align: center;
+              border-radius: 20px;
+              font-weight: 600;
+              font-size: 0.95em;
+            }
+        }
+      }
+
+      // Right part (Host info)
+      .right-host-rating {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // Host container
+        .host {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            gap: 10px;
+            // Name
+            .name-container {
+              flex-grow: 1;
+              width: 150px;
+              text-align: right;
+              p{
+                font-weight: 500;
+                font-size: 1.1em;
+              }
+            }
+            // Picture
+            .picture-container {
+              flex-grow: 2;
+              img {
+                  border-radius: 50%;
+                  flex: 1;
+                  width: 60px;
+                  aspect-ratio: 1/1;
+              }
+            }
+        }
+        // Rating container
+        .rating {
+          font-size: 1.5em;
+          display: flex;
+          justify-content: flex-end;
+          gap: 15px;
+
+          .unfilled-star {
+            color: lightgrey;
+          }
+        }
+      }
+
+  }
+}
+
+.location-collapses-container {
+  display: flex;
+  gap: 50px;
+
+  .collapse-title {
+    font-size: 1em;
+  }
+
+  .collapse-content:has(ul) li {
+    list-style: none;
+    padding: 2px 0;
+    font-size: .95em;
+  }
+}

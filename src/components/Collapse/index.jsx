@@ -35,5 +35,6 @@ Collapse.propTypes = {
 };
 
 Collapse.defaultProps = {
-  title: "Titre NULL",
+  title: "Pas de titre spécifié",
+  children: "..."
 };
