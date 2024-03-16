@@ -6,6 +6,11 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
   overflow: hidden;
 
+  // RESPONSIVE
+  @media screen and (max-width: 425px) {
+    height: 280px;
+  }
+
   //   Image container
   .image-container {
     height: 100%;
@@ -29,6 +34,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      
+      // RESPONSIVE
+      @media screen and (max-width: 425px) {
+        height: 100%;
+      }
 
       button {
         background-color: transparent;
@@ -38,9 +48,21 @@
         opacity: 0.5;
         transition: opacity 0.2s linear;
 
+        // RESPONSIVE
+        @media screen and (max-width: 425px) {
+          opacity: 1;
+          transition: none;
+        }
+
         svg {
           height: 200px;
           width: 200px;
+
+          // RESPONSIVE
+          @media screen and (max-width: 425px) {
+            height: 55px;
+            width: 55px;
+          }
         }
 
         &:hover {
@@ -48,12 +70,18 @@
         }
       }
     }
+
     // Picture number container
     .picture-number-container {
       height: 10%;
       color: white;
       display: flex;
       justify-content: center;
+
+      // RESPONSIVE
+      @media screen and (max-width: 425px) {
+        display: none;
+      }
 
       p {
         font-weight: 500;

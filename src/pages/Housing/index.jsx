@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import HousingInfo from "../../components/HousingInfo";
 import "./index.scss";
-import { useNavigate, useParams } from "react-router-dom";
+import { redirect, useParams } from "react-router-dom";
 import housings from "../../data/logements.json";
 import Slideshow from "../../components/Slideshow";
 
@@ -10,8 +10,7 @@ const Housing = () => {
   // Id of the housing passed in the url
   let { id } = useParams();
 
-  // Redirection
-  const navigate = useNavigate();
+
 
   let housing_match = housings.filter((housing) => housing.id === id);
 
@@ -40,8 +39,7 @@ const Housing = () => {
       </>
     );
   } else {
-    alert("Id inexistant");
-    navigate("/*");
+    window.location.href = "/*";
   }
 };
 

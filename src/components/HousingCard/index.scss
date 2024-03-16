@@ -1,37 +1,52 @@
 a:has(.housing-card) {
-text-decoration: none;
+  text-decoration: none;
+
+  // ------- RESPONSIVE
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
 }
 
 .housing-card {
-    height: 275px;
-    width: 275px;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    font-weight: 600;
-    transition: all .2s ease-out;
-    background-position: center;
-    background-size: cover;
+  height: 275px;
+  width: 275px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  // ------ RESPONSIVE
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+
+  &:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.33);
+    position: absolute;
+    inset: 0;
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 6px #000000;
+  }
+
+  p {
     position: relative;
-    overflow: hidden;
-    
-    &:after {
-        content: "";
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.33);        
-        position: absolute;
-        inset: 0;
-    }
+    z-index: 1;
 
-    &:hover {
-        box-shadow: 2px 2px 6px #000000;
+    // RESPONSIVE
+    @media screen and (max-width: 425px) {
+        font-size: 1.1em;
     }
-
-    p{
-        position: relative;
-        z-index: 1;
-    }
+  }
 }
