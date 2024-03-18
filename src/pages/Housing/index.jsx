@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import HousingInfo from "../../components/HousingInfo";
 import "./index.scss";
-import { redirect, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import housings from "../../data/logements.json";
 import Slideshow from "../../components/Slideshow";
 

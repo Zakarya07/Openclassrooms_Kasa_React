@@ -59,6 +59,11 @@
           width: 200px;
 
           // RESPONSIVE
+          @media screen and (max-width: 768px) {
+            height: 85px;
+            width: 85px;
+     
+          }
           @media screen and (max-width: 425px) {
             height: 55px;
             width: 55px;

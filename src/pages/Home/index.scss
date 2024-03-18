@@ -5,8 +5,11 @@
   flex-wrap: wrap;
   gap: 30px;
   margin: 75px auto;
-
+  
   // ------ RESPONSIVE
+  @media screen and (max-width: 965px) {
+    gap: 30px 5px;
+  }
   @media screen and (max-width: 425px) {
     padding: 0;
   }

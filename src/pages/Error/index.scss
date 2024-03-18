@@ -8,16 +8,23 @@ section.main-content {
     margin-bottom: 50px;
 
 
-    @media screen and (max-width:425px) {
-        height: 60vh;
+
+    // RESPONSIVE
+    @media screen and (max-width:950px) {
         &.wrapper {
             padding: 10px 20px;
         }
+    }
+    @media screen and (max-width:425px) {
+        height: 60vh;
     }
 
     .error-number {
         font-size: 16em;
 
+        // RESPONSIVE
+        @media screen and (max-width:768px) {
+            font-size: 10em;        }
         @media screen and (max-width:425px) {
             font-size: 5em;
         }
@@ -27,6 +34,11 @@ section.main-content {
         font-size: 2.25em;
         font-weight: 500;
         
+        // RESPONSIVE
+        @media screen and (max-width:768px) {
+            font-size: 1.5em;
+            text-align: center;
+        }
         @media screen and (max-width:425px) {
             font-size: 1.1em;
             text-align: center;

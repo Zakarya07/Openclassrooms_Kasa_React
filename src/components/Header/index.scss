@@ -18,6 +18,9 @@ header {
       height: 50px;
 
     // --------------- RESPONSIVE
+      @media screen and (max-width:415px) {
+        height: 40px;
+      }
       @media screen and (max-width:375px) {
         height: 35px;
       }
@@ -43,7 +46,7 @@ nav {
     font-weight: 600;
 
       // --------------- RESPONSIVE
-      @media screen and (max-width:320px) {
+      @media screen and (max-width:350px) {
         font-size: 0.8em;
       }
     
